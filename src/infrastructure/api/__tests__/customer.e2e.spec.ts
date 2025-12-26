@@ -51,6 +51,7 @@ describe("E2E test for customer", () => {
         },
       });
     expect(response.status).toBe(200);
+    
     const response2 = await request(app)
       .post("/customer")
       .send({
